@@ -60,3 +60,5 @@ py.extension_module(
     dependencies : dep_py,
 )
 ```
+
+Note that the Cython compiler will always be looked up on the `build_machine`.

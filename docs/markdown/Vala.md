@@ -348,3 +348,5 @@ custom_target('foo typelib', command: [g_ir_compiler, '--output', '@OUTPUT@', '@
               install: true,
               install_dir: get_option('libdir') / 'girepository-1.0')
 ```
+
+Note that the Vala compiler will always be looked up on the `build_machine`.
