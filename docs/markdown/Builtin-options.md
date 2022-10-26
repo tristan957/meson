@@ -110,13 +110,12 @@ All other combinations of `debug` and `optimization` set `buildtype` to `'custom
 
 ## Base options
 
-These are set in the same way as universal options, either by
-`-Doption=value`, or by setting them inside `default_options` of
-[[project]] in your `meson.build`. However, they cannot be shown in
-the output of `meson setup --help` because they depend on both the current
-platform and the compiler that will be selected. The only way to see
-them is to setup a builddir and then run `meson configure` on it with
-no options.
+These are set in the same way as universal options, either by `-Doption=value`,
+or by setting them inside `default_options` of [[project]] or [[subproject]] in
+your `meson.build`. However, they cannot be shown in the output of
+`meson setup --help` because they depend on both the current platform and the
+compiler that will be selected. The only way to see them is to setup a builddir,
+and then run `meson configure` on it with no options.
 
 The following options are available. Note that they may not be
 available on all platforms or with all compilers:
